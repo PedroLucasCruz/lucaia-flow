@@ -21,7 +21,7 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-            min-height: 100vh;
+            min-height: 100dvh;
             color: #2c3e50;
             line-height: 1.6;
         }
@@ -642,7 +642,9 @@
             flex-direction: column;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
             overflow: hidden;
-        }
+            padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+}
         
         /* Mobile: Modal em tela inteira */
         @media (max-width: 768px) {
@@ -653,11 +655,13 @@
             .whatsapp-container {
                 width: 100%;
                 max-width: 100%;
-                height: 100vh;
-                max-height: 100vh;
+                height: 100dvh;
+                max-height: 100dvh;
                 border-radius: 0;
                 box-shadow: none;
-            }
+                padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+}
             
             .whatsapp-header {
                 padding: 12px 15px;
